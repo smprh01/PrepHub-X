@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQs</title>
+    <link rel="stylesheet" href="faqspage.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+    <div class="navbar-brand">PrepHub X</div>
+    <ul class="navbar-menu">
+      <li><a href="../index.html">Home</a></li>
+      <li class="dropdown">
+        <a href="#">Menu ▾</a>
+        <ul class="dropdown-content">
+           <li><a href="../DSA Playlists/dsaplaylists.html">DSA Playlists</a></li>
+          <li><a href="../Core Subjects Notes/coresubjectsnotes.html">Core Subjects Notes</a></li>
+          <li><a href="../Motivation and Experiences/motivationandexperiences.html">Motivation and Experiences</a></li>
+          <li><a href="../Resume Templates and Tips/resumetemplatesandtips.html">Resume Templates and Tips</a></li>
+          <li><a href="../Company Question Bank/companyquestionbank.html">Company Question Bank</a></li>
+          <li><a href="../Daily Coding Tip/dailycodingtip.html">Daily Coding Tip</a></li>
+          <li><a href="../InterviewEssentials/interview.html">Interview Essentials</a></li>
+        </ul>
+      </li>
+          <li><a href="aboutus.html">About Us</a></li>
+      <li><a href="contactus.html">Contact us</a></li>
+    </ul>
+  </nav>
+
+    <!-- FAQ Header -->
+    <h1 class="faqq">Frequently Asked Questions</h1>
+    <p class="fapp">Got a question? We're here to answer!<br> If you don't see your question here, drop us a line on our Contact page</p>
+
+    <!-- FAQ Section -->
+    <div class="faq-container">
+        <div class="faq-item">
+            <div class="faq-question" onclick="toggleAnswer(1)">
+                What is PrepHub X?
+                <span class="close-btn" onclick="closeAnswer(event, 1)">×</span>
+            </div>
+            <div class="faq-answer" id="answer1">
+                PrepHub X is a placement preparation web hub that brings together all essential resources in one place. From DSA playlists and CS fundamentals notes to interview questions and resume guidance, it helps students prepare effectively without wasting time searching multiple platforms.
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question" onclick="toggleAnswer(2)">
+                Is PrepHub X free to use?
+                <span class="close-btn" onclick="closeAnswer(event, 2)">×</span>
+            </div>
+            <div class="faq-answer" id="answer2">
+                Yes, all the resources, notes, and tools provided on PrepHub X are free to access.
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question" onclick="toggleAnswer(3)">
+                What kind of DSA resources are available?
+                <span class="close-btn" onclick="closeAnswer(event, 3)">×</span>
+            </div>
+            <div class="faq-answer" id="answer3">
+                You’ll find curated playlists and a roadmap to cover important Data Structures and Algorithms for interviews.
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question" onclick="toggleAnswer(4)">
+                Which CS fundamentals are covered?
+                <span class="close-btn" onclick="closeAnswer(event, 4)">×</span>
+            </div>
+            <div class="faq-answer" id="answer4">
+                PrepHub X includes concise notes and explanations for the four most important CS subjects asked in interviews: OOP, DBMS, Operating Systems, and Computer Networks. These are simplified to help you quickly revise before interviews.
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question" onclick="toggleAnswer(5)">
+                Can I download notes from the website?
+                <span class="close-btn" onclick="closeAnswer(event, 5)">×</span>
+            </div>
+            <div class="faq-answer" id="answer5">
+                Yes, most notes and PDFs can be downloaded for offline use.
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question" onclick="toggleAnswer(6)">
+                Does PrepHub X help with resume building?
+                <span class="close-btn" onclick="closeAnswer(event, 6)">×</span>
+            </div>
+            <div class="faq-answer" id="answer6">
+                Yes, we share resume templates and tips on do’s and don’ts to help you create an interview-ready resume.
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question" onclick="toggleAnswer(7)">
+                Are there company-wise questions available?
+                <span class="close-btn" onclick="closeAnswer(event, 7)">×</span>
+            </div>
+            <div class="faq-answer" id="answer7">
+                Yes, there is a dedicated section with company-wise interview question lists. This helps students target their preparation for specific companies, especially those visiting their campus for placements.
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question" onclick="toggleAnswer(8)">
+                What is the Motivational section?
+                <span class="close-btn" onclick="closeAnswer(event, 8)">×</span>
+            </div>
+            <div class="faq-answer" id="answer8">
+                The Motivational section is designed to keep students motivated during the stressful placement journey. It includes daily motivational quotes and selected interview experience videos that give insights into real-world interviews and help reduce anxiety.
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question" onclick="toggleAnswer(9)">
+                What is the Coding Tip of the Day feature?
+                <span class="close-btn" onclick="closeAnswer(event, 9)">×</span>
+            </div>
+            <div class="faq-answer" id="answer9">
+                It’s a simple interactive tool that displays random coding tips to strengthen your problem-solving approach.
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question" onclick="toggleAnswer(10)">
+                Does PrepHub X provide aptitude and puzzles?
+                <span class="close-btn" onclick="closeAnswer(event, 10)">×</span>
+            </div>
+            <div class="faq-answer" id="answer10">
+                Currently, PrepHub X focuses on DSA, CS fundamentals, and interview prep. Aptitude and puzzles may be added later.
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question" onclick="toggleAnswer(11)">
+                Can I use PrepHub X for non-technical placements?
+                <span class="close-btn" onclick="closeAnswer(event, 11)">×</span>
+            </div>
+            <div class="faq-answer" id="answer11">
+                PrepHub X is mainly designed for technical and software-related placements. However, resume tips and motivational content can benefit all students.
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question" onclick="toggleAnswer(12)">
+                Why should I use PrepHub X over other resources?
+                <span class="close-btn" onclick="closeAnswer(event, 12)">×</span>
+            </div>
+            <div class="faq-answer" id="answer12">
+                Most online resources are scattered across multiple websites, playlists, and blogs. PrepHub X organizes everything—DSA, core CS notes, resume templates, interview tips, and motivational content—into a single, easy-to-navigate platform. This saves time and makes preparation more focused.
+            </div>
+        </div>
+    </div>
+
+     <!-- Footer -->
+    <footer class="footer">
+        <div class="containers text-center">
+            <span class="text-muted">© 2025 PrepHub X</span>
+        </div>
+    </footer>
+
+    <script src="faqscript.js"></script>
+</body>
+</html>

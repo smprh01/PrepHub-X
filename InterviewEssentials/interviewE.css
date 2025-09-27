@@ -1,0 +1,183 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #2b4c65;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Navbar */
+.navbar {
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+.navbar-brand {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.navbar-menu {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  gap: 15px;
+}
+
+.navbar-menu li {
+  position: relative;
+}
+
+.navbar-menu a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  top: 100%;
+  left: 0;
+  min-width: 220px;
+  list-style: none;
+  padding: 10px 0;
+  z-index: 100;
+}
+
+.dropdown-content li {
+  padding: 8px 15px;
+}
+
+.dropdown-content li a {
+  color: #333;
+  display: block;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+.dropdown-content li:hover {
+  background-color: #a7aaac;
+}
+
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+/* Card Styles */
+.card {
+  background: #f4f4f4;
+  color: #1e2a38;
+  border-radius: 15px;
+  padding: 25px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+  max-width: 500px;
+  flex: 1 1 400px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 35px rgba(0,0,0,0.35);
+}
+
+.card h2 {
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+/* Specific card colors */
+.dos-card {
+  background: #d4edda;
+  color: #155724;
+}
+
+.donts-card {
+  background: #f8d7da;
+  color: #721c24;
+}
+
+.mistakes-card {
+  background: #fff3cd;
+  color: #856404;
+}
+
+.essentials-card {
+  background: #cce5ff;
+  color: #004085;
+}
+
+/* Lists */
+ul, ol {
+  padding-left: 20px;
+}
+
+
+
+
+/* Footer */
+.footer {
+  background: #fff;
+  text-align: center;
+  padding: 15px;
+  border-top: 1px solid #ddd;
+  margin-top: auto;
+  color: #6c757d;
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+  .cards-container {
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+    margin-left: 5px;
+  }
+  .dos-donts-container {
+    flex-direction: column;
+  }
+}
+
+/* Mobile view me navbar ko vertical bana do */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar-menu {
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .navbar-menu li {
+    width: 100%;
+    text-align: left;
+  }
+
+  .dropdown-content {
+    position: static; /* mobile me dropdown normal flow me aa jayega */
+    box-shadow: none;
+    border: 1px solid #ddd;
+    margin-top: 5px;
+  }
+}

@@ -1,0 +1,196 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #2b4c65;
+    background-image: url('image/home1.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    overflow: auto;
+    color: white;
+    position: relative;
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: -1;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 22px;
+    color: #000;
+}
+
+.navbar-links ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 20px;
+}
+
+.navbar-links a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+}
+
+
+/* Homepage Content */
+.homepage {
+    margin-top: 70px;
+    text-align: left;
+    margin-left: 50px;
+}
+
+.homepage h1 {
+    color: white;
+    font-size: 60px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    margin-top: -55px;
+}
+
+.homepage p {
+    color: white;
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.homepagePara p {
+    color: white;
+    font-size: 22px;
+    font-weight: 500;
+    margin-right: 50px;
+}
+
+.homepage h5 {
+    color: white;
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.homepageButton {
+    background-color: #ffffff;
+    color: #2b4c65;
+    font-weight: 700;
+    font-size: 25px;
+    border: 5px solid #2b4c65;
+    border-radius: 30px;
+    width: 15%;
+    padding: 15px;
+    cursor: pointer;
+}
+
+.homepageButton:hover {
+    background-color: #ffffff;
+    color: #2b4c65;
+    border: 4px solid #2b4c65;
+}
+
+.homepageButton:active,
+.homepageButton:focus,
+.homepageButton:visited {
+    background-color: #ffffff;
+    border-color: #38698f;
+    box-shadow: none;
+    outline: none;
+}
+
+/* Footer */
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    background-color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text-muted {
+    color: #6c757d;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .homepage {
+        margin-left: 20px;
+        margin-top: 50px;
+    }
+
+    .homepage h1 {
+        font-size: 35px;
+        margin-top: -20px;
+    }
+
+    .homepage p {
+        font-size: 18px;
+    }
+
+    .homepagePara p {
+        font-size: 14px;
+        margin-right: 20px;
+    }
+
+    .homepage h5 {
+        font-size: 20px;
+    }
+
+    .homepageButton {
+        width: 50%;
+        font-size: 18px;
+        padding: 10px;
+    }
+
+    .navbar-links ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 992px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start; /* sab left aligned */
+        padding: 10px 20px;
+    }
+
+    .navbar-nav {
+        flex-direction: column;  /* vertical list */
+        width: 100%;
+        margin-top: 10px;
+        align-items: flex-start; /* links left side */
+        gap: 10px;
+    }
+
+    .navbar-nav li {
+        margin-left: 0; /* remove horizontal spacing */
+    }
+}
